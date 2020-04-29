@@ -1,0 +1,128 @@
+@import url<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">;
+@import url<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">;
+
+body {
+    font-family: "Gotu", sans-serif;
+  color: #000000; 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+ul {
+ list-style-type: circle; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway",serif;
+  font-color: 5px solid #C120AE;
+}
+tr:nth-child(odd) {
+      background-color: #C120AE;
+}
+
+th {
+      background-color: #C120AE;
+      color: #FBF1FA;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+}
+
+table, td, th {
+        text-align: justify;
+        padding: 10px;
+        border: 1px solid black;
+}
+
+table {border-collapse: collapse;}
+
+.footer {
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #C120AE;
+}
+#copyright {
+          text-align: center;
+}
+
+.footer ul li{
+    display: inline;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+a:link {
+  background-color: #C120AE;
+  text-decoration: none;
+}
+
+a:visited {
+  background-color:#C120AE;
+  text-decoration: none;
+}
+
+a:active {
+  background-color:#C120AE;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color:#C120AE;
+  text-decoration: underline;
+}
+
+img {
+  height: 200px;
+  float: none;
+  border: 2px solid #C120AE;
+  padding: 2em;
+  background-color: #C120AE;
+}
+
+.main-head {
+      font-size: 22px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+}
+
+{box-sizing: border-box;}
+  
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+}
+      aside ul {
+         list-style: none;
+          margin: 1.5;
+          padding: 2;
+}
+
+.main-aside {
+     grid-area: sidebar;
+      background-color: #C120AE;
+      padding: 20px;
+}
+
+.information {
+  grid-area: content;
+}
+
+.main-head {
+   grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.wrapper {
+ display: grid;
+ grid-gap: 20px;
+ grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
