@@ -37,7 +37,7 @@ table, td, th {
 
 table {border-collapse: collapse;}
 
-.footer {
+footer {
   padding-bottom: 10px;
   text-align: left;
   background-color: #C120AE;
@@ -46,7 +46,7 @@ table {border-collapse: collapse;}
           text-align: center;
 }
 
-.footer ul li{
+footer ul li{
     display: inline;
     margin-left: 15px;
     padding-left: 15px;
